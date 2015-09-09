@@ -1,0 +1,21 @@
+html{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+h1{
+/* Box model */
+  margin: 0em;
+  padding: 0em;
+
+/* Visual decorations */
+
+/* Typography */
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: sans-serif;
+}
