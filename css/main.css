@@ -1,6 +1,12 @@
 html{
   width: 100%;
   box-sizing: border-box;
+  padding: 0em;
+  margin: 0em;
+
+  background-color: #bcbec0;
+
+  font-family: sans-serif;
 }
 
 *, *::before, *::after{
@@ -11,17 +17,22 @@ html{
 /* Visual decorations */
 /* Typography */
 
-.top{
-  display: inline;
+body{
   margin: 0em;
   padding: 0em;
 }
+
+.top{
+  display: inline;
+  margin-top: 1em;
+  padding: 0em;
+}
   .top h1{
-    margin: 0em;
     padding: 0em;
+
     text-align: center;
     font-size: 1.25rem;
-    font-family: sans-serif;
+    color: #fff;
   }
 
   .top img{
@@ -31,6 +42,79 @@ html{
 
   .top p{
     float: right;
-    margin: 0em;
-    padding: 0em;
+    padding: .25em;
+
+    background-color: #939598;
+
+
   }
+
+nav{
+  margin: 0em;
+  padding: 2em;
+  width: 100%;
+
+  background-color:#939598;
+}
+
+  nav ol{
+    width: 100%;
+    padding: 0em;
+    margin: 0em;
+
+    list-style: none;
+  }
+
+  nav li{
+    padding: .5em;
+    width: calc(100% / 4);
+    float: left;
+
+    background-color: #939598;
+
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  nav a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  nav li:hover{
+    background-color: #6d6e71;
+  }
+
+.seven{
+  position: relative;
+}
+  .seven img{
+    width: 100%;
+  }
+
+  .seven h2{
+    position: absolute;
+    top: 60px;
+
+    text-align: center;
+    color: #fff;
+  }
+
+  .seven p{
+    position: absolute;
+    top: 100px;
+
+    text-align: center;
+    color: #fff;
+  }
+
+h2{
+  text-align: center;
+  margin: 0em;
+}
+
+.images img{
+  width: 100%;
+  padding: 1em;
+  margin: 0em;
+}
