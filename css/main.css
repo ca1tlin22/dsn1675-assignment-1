@@ -144,6 +144,49 @@ dd{
 }
 
 .button{
-  clear: both;
-  padding: 1em;
+  display: inline-block;
+  padding-top: 1em;
+  width: 100%;
 }
+
+  .button a{
+    padding: .5em;
+    text-align: center;
+
+    background-color: #939598;
+
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .button a:hover{
+    background-color: #6d6e71;
+  }
+
+.tickets{
+  background-color: #fff;
+  padding: 0em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+  .price{
+    width: 100%;
+  }
+
+  .tickets a{
+    display: inline;
+    padding: .5em;
+    width: 50%;
+    float: left;
+    text-align: center;
+
+    background-color: #939598;
+
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .tickets a:hover{
+    background-color: #6d6e71;
+  }
