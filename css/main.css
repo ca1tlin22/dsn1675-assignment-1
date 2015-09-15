@@ -45,16 +45,14 @@ body{
     padding: .25em;
 
     background-color: #939598;
-
-
   }
 
 nav{
   margin: 0em;
-  padding: 2em;
+  padding: 0em;
   width: 100%;
 
-  background-color:#939598;
+  background-color: #939598;
 }
 
   nav ol{
@@ -63,6 +61,7 @@ nav{
     margin: 0em;
 
     list-style: none;
+    background-color: #939598;
   }
 
   nav li{
@@ -113,8 +112,38 @@ h2{
   margin: 0em;
 }
 
+h3{
+  padding-left: 1em;
+  margin: 0em;
+}
+
 .images img{
   width: 100%;
   padding: 1em;
   margin: 0em;
+}
+
+.list-item{
+  width: calc(100% / 3);
+  float: left;
+}
+
+dl{
+  padding-left: 1em;
+}
+
+dt{
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+dd{
+  padding: 0em;
+  margin: 0em;
+  font-size: .75rem;
+}
+
+.button{
+  clear: both;
+  padding: 1em;
 }
