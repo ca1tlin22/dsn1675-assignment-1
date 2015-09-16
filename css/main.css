@@ -172,10 +172,11 @@ dd{
   }
 
 .tickets{
-  background-color: #fff;
   padding-bottom: 1em;
   padding-top: 1em;
   clear: both;
+
+  background-color: #fff;
 }
 
   .price{
@@ -273,5 +274,46 @@ dd{
 }
 
 .times a:hover{
+  background-color: #6d6e71;
+}
+
+ol{
+  padding: 1em;
+  margin: 0em;
+}
+
+ol li{
+  list-style: none;
+}
+
+footer{
+  background-color: #fff;
+}
+
+  footer p, address, a{
+    padding-left: 1em;
+  }
+
+.foot-butts{
+  padding: 0em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.foot-butts a{
+  display: inline;
+  padding: .5em;
+  width: 100%;
+  float: left;
+  text-align: center;
+  clear: both;
+
+  background-color: #939598;
+
+  text-decoration: none;
+  color: #fff;
+}
+
+.foot-butts a:hover{
   background-color: #6d6e71;
 }
