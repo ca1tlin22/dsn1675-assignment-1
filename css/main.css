@@ -147,6 +147,7 @@ h3{
 
 dl{
   padding-left: 1em;
+  padding-right: 1em;
 }
 
 dt{
@@ -323,6 +324,16 @@ footer{
 
   footer p, address, a{
     padding-left: 1em;
+    margin: 0em;
+  }
+
+  footer p{
+    clear: both;
+  }
+
+  footer a{
+    float: left;
+    clear: both;
   }
 
 .foot{
@@ -333,6 +344,7 @@ footer{
 
 .foot a{
   display: inline;
+  margin: 0em;
   padding: .5em;
   width: 100%;
   float: left;
@@ -349,13 +361,17 @@ footer{
   background-color: #6d6e71;
 }
 
+.wrapper{
+  max-width: 40em;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 25em) {
 
   nav li{
     width: 50%;
     float: left;
   }
-
   .seven h2{
     padding: .5em;
     top: 10px;
@@ -369,6 +385,11 @@ footer{
 }
 
 @media only screen and (min-width: 38em) {
+
+  html {
+  font-size: 110%;
+  line-height: 1.4;
+  }
 
   .seven h2 {
     top: 30%;
@@ -394,7 +415,7 @@ footer{
   }
 }
 
-@media only screen and (min-width: 47em) {
+@media only screen and (min-width: 37em) {
 
   .top{
     width: 100%;
@@ -405,27 +426,8 @@ footer{
     padding-top: 1em;
   }
 
-  main{
-    float: right;
-    width: 70%;
-  }
-
-  nav{
-    float: left;
-    width: 30%;
-  }
-
-  .nav {
-    text-align: left;
-  }
-
-  .nav li {
-    display: inline-block;
-    width: 100%;
-  }
-
-  .foot{
-    background-color: #939598;
+  .foot a{
+    height: 4em;
   }
 
   .foot li{
@@ -435,10 +437,57 @@ footer{
   }
 }
 
-@media only screen and (min-width: 63em){
+@media only screen and (min-width: 68em){
 
-  .top{
+  html{
+    font-size: 120%;
+    line-height: 1.5;
+  }
 
+@media only screen and (min-width: 90em){
+
+  .wrapper{
+    min-width: 100%;
+  }
+
+  .left{
+    float: left;
+    width: 50%;
+    padding: 1em;
+    clear: left;
+  }
+
+  .right{
+    float: right;
+    width: 50%;
+    padding: 1em;
+    clear: right;
+  }
+
+  .center{
+    display: block;
+    vertical-align: center;
+    padding-left: 15em;
+    padding-right: 15em;
+  }
+
+  }
+
+@media only screen and (min-width: 56em) {
+
+  .wrapper{
+    min-width: 80em
+  }
+}
+
+@media print{
+
+  .nav{
+    display: none;
+  }
+
+  main a::after{
+    content: " (" attr(href) ")";
   }
 
 }
